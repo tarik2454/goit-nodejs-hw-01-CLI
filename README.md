@@ -1,18 +1,16 @@
 # goit-nodejs-hw-01-CLI
 
-# Получаем и выводим весь список контактов в виде таблицы (console.table)
 
-node index.js --action list
+* Отримуємо і виводимо весь список контактів у вигляді таблиці (console.table)  
+`node index.js --action="list"`  
+[Скріншот](https://monosnap.com/list/65266bfb33bd787c8336844b)
 
-# Получаем контакт по id - выводим в консоль объект контакта или null, если контакта с таким id не существует.
+* Отримуємо контакт по id  
+`node index.js --action="get" --id=5`
 
-node index.js --action get --id 05olLMgyVQdWRwgKfg5J6
+* Додаємо контакт  
+`node index.js --action="add" --name="Mango" --email="mango@gmail.com" --phone="322-22-22"`
 
-# Добавляем контакт и выводим в консоль созданный контакт
+* Видаляємо контакт  
+`node index.js --action="remove" --id=3`
 
-node index.js --action add --name Mango --email mango@gmail.com --phone
-322-22-22
-
-# Удаляем контакт и выводим в консоль удаленный контакт или null, если контакта с таким id не существует.
-
-node index.js --action remove --id qdggE76Jtbfd9eWJHrssH
